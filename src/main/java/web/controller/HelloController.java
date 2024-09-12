@@ -30,11 +30,11 @@ public class HelloController {
     public String cars(HttpServletRequest request, ModelMap model) {
 
         List<String> listCars = new ArrayList<>();
-        listCars.add(String.valueOf(new Car("red","V16","MB")));
-        listCars.add(String.valueOf(new Car("green","V16","W")));
-        listCars.add(String.valueOf(new Car("black","V32","Porsche")));
-        listCars.add(String.valueOf(new Car("white","V16","BMW")));
-        listCars.add(String.valueOf(new Car("purple","V16","AUDI")));
+        listCars.add(String.valueOf(new Car("red", "V16", "MB")));
+        listCars.add(String.valueOf(new Car("green", "V16", "W")));
+        listCars.add(String.valueOf(new Car("black", "V32", "Porsche")));
+        listCars.add(String.valueOf(new Car("white", "V16", "BMW")));
+        listCars.add(String.valueOf(new Car("purple", "V16", "AUDI")));
 
 
         if (request.getParameter("quantity") != null) {
